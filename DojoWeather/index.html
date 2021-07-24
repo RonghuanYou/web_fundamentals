@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dojo Weather</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- NAV BAR -->
+        <div class="nav">
+            <div class="flex-container">
+                <h1>DojoWeather</h1>
+                <ul class="nav-links">
+                    <li><a href="" onclick="displayAlert()">Burbank</a></li>
+                    <li><a href="" onclick="displayAlert()">Chicago</a></li>
+                    <li><a href="" onclick="displayAlert()">Dallas</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Main Content-->
+        <div class='content-container'>
+            <!-- TOP SECTION -->
+            <div class="flex-container content-top">
+                <h1>San Jose</h1>
+                <div class="temperature-select">
+                    <span>Show temperature in</span>
+                    <select onchange="changeTempType(this)">
+                        <option>°C</option>
+                        <option>°F</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- FOUR WEATHER CARD SECTION -->
+            <div class="weather-card-container">
+                <div class="flex-container">
+                    <div class="single-weather-card">
+                        <h2>Today</h2>
+                        <img src="img/some_rain.png" alt="some rain image">
+                        some rain
+                        <div class="low-high-temp">
+                            <span class="high-temp today-high">24°</span>
+                            <span class="low-temp today-low">18°</span>
+                        </div>
+                    </div>
+
+                    <div class="single-weather-card">
+                        <h2>Tomorrow</h2>
+                        <img src="img/some_sun.png" alt="some sun image">
+                        some sun
+                        <div class="low-high-temp">
+                            <span class="high-temp tomorrow-high">27°</span>
+                            <span class="low-temp tomorrow-low">19°</span>
+                        </div>
+                    </div>
+
+
+                    <div class="single-weather-card">
+                        <h2>Friday</h2>
+                        <img src="img/some_clouds.png" alt="some clouds image">
+                        some clouds
+                        <div class="low-high-temp">
+                            <span class="high-temp friday-high">21°</span>
+                            <span class="low-temp friday-low">16°</span>
+                        </div>
+                    </div>
+
+                    <div class="single-weather-card last">
+                        <h2>Saturday</h2>
+                        <img src="img/some_sun.png" alt="some sun image">
+                        some sun
+                        <div class="low-high-temp">
+                            <span class="high-temp saturday-high">26°</span>
+                            <span class="low-temp saturday-low">21°</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COOKIE SECTION -->
+            <div class="flex-container cookie-container">
+                <img src="img/cookie.png" alt="cookie image">
+                <div class="cookie-description">    
+                    <h3>Stop! Cookie time</h3>
+                    <p>We use cookies (sadly not the edible ones) to personalize content and ads,
+                        to provide social media features and to analyse our traffic. <a href="">Read more...</a>
+                    </p>
+                </div>
+                <button onclick="dismissCookie()">I Accept</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONNECT JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>

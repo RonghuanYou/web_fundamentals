@@ -1,0 +1,144 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.flex-container{
+    width: 750px;
+    margin: 0 auto;
+}
+
+.nav{
+    height: 80px;
+    background-color: lightblue;
+    color: white;
+}
+
+.nav,
+.nav-links,
+.flex-container,
+.low-high-temp{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links{
+    margin: 20px;
+    list-style-type: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 25px;
+}
+
+/* ------------------------------------ */
+/* TOP SECTION */
+.temperature-select{
+    font-size: 20px;
+}
+
+.temperature-select > select{
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+/* draw seperator line*/
+.content-top{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid black;
+}
+
+/* ------------------------------------ */
+/* FOUR WEATHER CARD SECTION */
+
+/* LET ITEMS INSIDE THIS CONTAINER STAY CENTER */
+.weather-card-container{
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.single-weather-card{
+    width: 22%;
+    height: 280px;
+    background-color: lightgray;
+    margin-right: 25px;
+}
+
+/* Weather image */
+.single-weather-card > img{
+    width: 100px;
+    height: 100px;
+    margin: 20px 20px 15px 20px;       
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto; */
+    border-radius: 50%;
+}
+
+.last{
+    margin-right: 0px;
+}
+
+/* position date: today, friday */
+.single-weather-card > h2{
+    margin-top: 15px;
+}
+
+/* postion low-temp and high-temp */
+.low-high-temp > span{
+    margin: 25px;
+    font-size: 20px;
+}
+
+.high-temp{
+    font-weight: bold;
+    color: red;
+}
+.low-temp{
+    font-weight: bold;
+    color: dodgerblue;
+}
+
+/* ------------------------------------ */
+/*  COOKIE SECTION*/
+.cookie-container{
+    width: 745px;
+    border: 3px solid black;
+    position:fixed;
+    top:50%;
+    left:50%;
+    margin-top: 130px;
+    margin-left: -375px;
+}
+
+/* cookie image */
+.cookie-container > img{
+    width: 80px;
+    height: 80px;
+    padding: 15px 0px 15px 15px;
+}
+
+/* description positon to left */
+.cookie-description{
+    margin-left: -20px;
+}
+
+.cookie-description > p{
+    width: 450px;
+}
+
+.cookie-container > button{
+    width: 100px;
+    height: 30px;
+    margin-right: 30px;
+    background-color: lightblue;
+    box-shadow: 4px 4px black;
+    border: 2px solid black;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Button Clicker</title>
+</head>
+<body>
+    <!-- CONTENT -->
+    <!-- NAV BAR SECTION  -->
+    <div class="nav">
+        <div class="flex-container nav-bar">
+            <h1>Dojonary</h1>
+            <input type="text" placeholder="Search">
+            <button type="submit" id="login" onclick="changeToLogout()">Login</button>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT: LEFT COLUMN: 2/3 + RIGHT COLUMN: 1/3 -->
+    <!-- LEFT COLUMN: 2/3 -->
+    <div class="main-content">
+        <div class="left-col">
+            <div class="left-col-card">
+                <div class="card-flex-container">
+                    <div class="ninja-pron-like">
+                        <h1>ninja</h1>
+                        <span>noun</span>
+                        <p>plural: <span>ninjas</span></p>
+                        <button onclick="alert('This page says Ninja was liked')">13 likes</button>
+                    </div>
+
+                    <div class="ninja-description">
+                        A practitioner skilled in the <a href="">Japanese</a> art of <a href="">ninjutsu</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="left-col-card">
+                <div class="card-flex-container">
+                    <div class="ninja-pron-like">
+                        <h1>ninja</h1>
+                        <span>noun</span>
+                        <p>plural: <span>ninjas</span></p>
+                        <button onclick="alert('This page says Ninja was liked')">37 likes</button>
+                    </div>
+
+                    <div class="ninja-description">
+                        A <a href="">programmer </a> who breaks down problems with <a href=""> zen</a> -like focus
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- RIGHT COLUMN: 1/3 -->
+        <!-- ADD NEW DEFINITION WINDOW ON RIGHT COLUNON-->
+        <div class="right-col">
+            <div class="new-definition">
+                <p>Dojonary is</p>
+                <p>defined by <span>YOU</span></p>
+                <button onclick="removeButton(this)">Add Definition</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONNECT JS FILE -->
+    <script src="script.js"></script>
+</body>
+</html>

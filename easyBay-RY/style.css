@@ -1,0 +1,226 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+/* ---------------------- */
+/* NAV BAR SECTION */
+/* ---------------------- */
+.nav-container,
+.search-bar,
+.nav-links,
+.flex-container,
+.cookie-container{
+    display: flex;
+}
+
+.nav-container,
+.nav-links,
+.flex-container {
+    margin: 0 auto;
+    width: 860px;
+}
+
+.nav-container,
+.nav-links{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.leaf-icon{
+    width: 55px;
+    height: 55px;
+}
+
+.search-icon,
+.shopping-car-icon {
+    width: 45px;
+    height: 36px;
+}
+
+.nav-bar{
+    height: 90px;
+    margin-top: 20px;
+}
+
+.nav-container > h1{
+    font-size: 40px;
+}
+
+/* Search bar */
+.search-bar > input{
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 18px;
+    padding-left: 20px;
+    border-radius: 30px;
+}
+
+.search-bar img{
+    position: relative;
+    left: -50px;
+    top: 4px;
+}
+
+/* Sign in */
+.nav-container button{
+    border: none;
+    font-size: 15px;
+    height: 40px;
+    background-color: white;
+    margin-left: -40px;
+}
+
+.nav-links{
+    border-bottom: 4px solid black;
+    padding-bottom: 10px;
+}
+
+.nav-links li {
+    list-style-type: none;
+}
+
+.nav-links > li > a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+/* MAIN CONTENT */
+/* ------------------------------------------------------- */
+/* SECTION 1: Description, succulents image and aloe image */
+/* ------------------------------------------------------- */
+.main-content > h1{
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.discover-descrip {
+    width: 200px;
+    height: 191px;
+    background-color: lightseagreen;
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    padding: 45px 40px;
+}
+
+.arrow-flex{
+    display: flex;
+    align-items: center;
+}
+
+/* Discover and arrow img */
+.discover-sec{
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 45px;
+    margin-left: 20px;
+}
+
+.discover-arrow{
+    width: 35px;
+    height: 30px;
+    margin-top: 4px;
+}
+
+.succulents{
+    width: 280px;
+    height: 281px;
+}
+
+.aloe-section{
+    margin-left: 20px;
+}
+
+.aloe-image{
+    width: 290px;
+    height: 180px;
+}
+
+.aloe-text {
+    background-color: lightseagreen;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    width: 271px;
+    height: 80px;
+    margin-top: 18px;
+    padding-left: 20px;
+}
+
+/* Soothing Aloe */
+.aloe-text > h2{
+    height: 24px;
+    width: 200px;
+    background-color: lightseagreen;
+    color: white;
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+.aloe-arrow{
+    width: 35px;
+    height: 30px;
+    margin-top: 5px;
+}
+
+/* ----------------------------- */
+/* SECTION 2: SIX PLANTS SECTION */
+/* ----------------------------- */
+.plant-shows{
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(203, 240, 227);
+    margin-top: 20px;
+    height: 250px;
+}
+
+.plant-shows > span > img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+.plant-shows > span{
+    text-align: center;
+}
+
+/* -------------------------- */
+/* SECTION 3: COOKIE SECTION  */
+/* -------------------------- */
+.cookie-container{
+    width: 857px;
+    position: fixed;
+    left: 18.8%;
+    bottom: 0;
+    margin: auto;
+    background-color: white;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid black;
+    height: 90px;
+}
+
+.cookie-description > p{
+    width: 521px;
+    font-size: 13px;
+    margin-left: -30px;
+}
+
+/* I accept button */
+.cookie-container > button{
+    width: 100px;
+    height: 32px;
+    margin-right: 10px;
+    background-color: lightseagreen;
+    box-shadow: 4px 4px black;
+    border: 2px solid black;
+}
+
+.cookie-link{
+    color: blue;
+}

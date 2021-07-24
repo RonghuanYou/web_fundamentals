@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Likes</title>
+</head>
+<body>
+    <div class="container">
+        <!-- top portion -->
+        <h1 class="top-portion">Network</h1>
+
+        <!-- content top -->
+        <p>Your Feed</p>
+
+        <!-- content in left column -->
+        <div class="left-col">
+            <img src="userIcon.png" alt="user profile img">
+            <a href="">Add an avatar</a>
+            <p>James Doe</p>
+        </div>
+
+        <!-- content in right column -->
+        <div class="right-col">
+            <div class="post-card">
+                <div class="row">
+                    <span>Neil M</span>
+                    <p id="Neil-like-text">9 likes(s)</p>
+                    <button onclick="increaseNeilLike()">Like</button>
+                </div>
+                <p>I just set up this new discord bot, let me know what you all think. <a href="">link</a></p>
+            </div>
+
+            <div class="post-card">
+                <div class="row">
+                    <span>Nichole K</span>
+                    <p id="Nichole-like-text">12 likes(s)</p>
+                    <button onclick="increaseLikeNichole()">Like</button>
+                </div>
+                <p>Just finished my <a href="">next comic,</a> check it out.</p>
+            </div>
+
+            <div class="post-card">
+                <div class="row">
+                    <span>Jim R</span>
+                    <p id="Jim-like-text">9 likes(s)</p>
+                    <button onclick="increaseJimLike()">Like</button>
+                </div>
+                <p>I can't stop listening to the <a href="">new album.</a> Who else is liking it?</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

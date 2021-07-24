@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Succulent Shop</title>
+</head>
+
+<body>
+    <!--  NAV BAR SECTION: nav-bar AND nav-links -->
+    <div class="nav-bar">
+        <div class="nav-container">
+            <img src="img/leaf1.png" alt="leaf icon" class="leaf-icon">
+            <h1>EasyBay</h1>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for anything">
+                <img src="img/search-dark.png" alt="search icon" class="search-icon">
+            </div>
+            <button>Sign In</button>
+            <img src="img/cart-dark.png" alt="shopping cart icon" onclick="displayMessage()" class="shopping-car-icon">
+        </div>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="">Aeonium</a></li>
+        <li><a href="">Andormischus</a></li>
+        <li><a href="">Agava</a></li>
+        <li><a href="">Aloe</a></li>
+        <li><a href="">Anacampseros</a></li>
+        <li><a href="">Aristaloe</a></li>
+        <li><a href="">More...</a></li>
+    </ul>
+
+    <!-- MAIN CONTENT  -->
+    <div class="main-content">
+        <h1>Your Source for Serious Succulent Specialties</h1>
+
+        <!-- discover-section, succulents-section, aloe-section -->
+        <div class="flex-container">
+            <div class="discover-descrip">
+                <h2>Discover succ-ulent varieties one pot or rack at a time!</h2>
+                <span class="arrow-flex discover-sec">
+                    Discover
+                    <img src="img/arrow-light.png" alt="left-arrow icon" class="discover-arrow">
+                </span>
+            </div>
+            <img src="img/succulents-1.jpg" alt="succulents image" onmouseover="changeImage(this)" onmouseleave="changeBackImg(this)" class="succulents">
+            <div class="aloe-section">
+                <img src="img/aloe-m.jpg" alt="aloe image" class="aloe-image">
+                <span class="arrow-flex aloe-text">
+                    Soothing Aloe
+                    <img src="img/arrow-light.png" alt="left-arrow icon" class="aloe-arrow">
+                </span>
+            </div>
+        </div>
+
+        <!-- SIX PLANTS SECTION -->
+        <div class="flex-container plant-shows">
+            <span>
+                <img src="img/aeonium-s.jpg" alt="aeonium image"> Aeonium
+            </span>
+
+            <span>
+                <img src="img/aloe-s.jpg" alt="aloe image"> Aloe
+            </span>
+
+            <span>
+                <img src="img/cactus-s.jpg" alt="cactus image"> Cactus
+            </span>
+
+            <span>
+                <img src="img/echeveria-s.jpg" alt="echeveria image"> Echeveria
+            </span>
+
+            <span>
+                <img src="img/sedum-s.jpg" alt="sedum image"> Sedum
+            </span>
+
+            <span>
+                <img src="img/sempervivum-s.jpg" alt="sempervivum image"> Sempervivum
+            </span>
+        </div>
+
+
+        <!-- COOKIE SECTION -->
+        <div class="cookie-container">
+            <img src="img/alert-dark.png" alt="cookie alert image">
+            <div class="cookie-description">
+                <p>This site makes use of third-party cookies, by clicking "I accept" you agree to the terms
+                    outlined in our <a href="" class="cookie-link">cookie policy.</a>
+                </p>
+            </div>
+            <button onclick="dismissCookie()">I accept</button>
+        </div>
+    </div>
+
+    <!-- CONNECT JS -->
+    <script src="script.js"></script>
+</body>
+</html>
